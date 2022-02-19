@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import useWindowDimensions from "../hooks/UseWindowDimensions";
 import Header from "./Header";
 const Container = styled.div`
   width: 100%;
@@ -40,19 +41,28 @@ const Container = styled.div`
   }
 `;
 const Banner = () => {
+  const { width, height } = useWindowDimensions();
   return (
     <Container>
-      <Header />
       <div className="blur">
         <span className="name">
           {"< "}김민수{" />"}
         </span>
         <span className="intro">웹 / 앱 개발자 포트폴리오</span>
-        <div className="duction">
-          <p>안녕하세요,</p>
-          <p>코딩을 사랑하는 개발자 김민수입니다.</p>
-          <p>문과적 소양과 이과적 능력을 겸비한 '융합형 인재' 입니다.</p>
-        </div>
+        {width > 768 ? (
+          <div className="duction">
+            <p>안녕하세요,</p>
+            <p>코딩을 사랑하는 개발자 김민수입니다.</p>
+            <p>문과적 소양과 이과적 능력을 겸비한 '융합형 인재' 입니다.</p>
+          </div>
+        ) : (
+          <div className="duction">
+            <p>안녕하세요,</p>
+            <p>코딩을 사랑하는 개발자 김민수입니다.</p>
+            <p>문과적 소양과 이과적 능력을 겸비한</p>{" "}
+            <p>'융합형 인재' 입니다.</p>
+          </div>
+        )}
       </div>
     </Container>
   );

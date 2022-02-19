@@ -7,10 +7,9 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
 
   .innerContainer {
-    padding: 50px;
+    padding: 20px;
     width: 95%;
     max-width: 1024px;
     display: flex;

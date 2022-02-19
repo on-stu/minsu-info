@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 import About from "./components/About";
 import Archiving from "./components/Archiving";
@@ -15,8 +16,25 @@ const Container = styled.div`
 `;
 
 function App() {
+  const [headerBackground, setHeaderBackground] = useState(false);
+
+  const scrollEvent = () => {
+    if (window.scrollY > 100) {
+      setHeaderBackground(true);
+    } else {
+      setHeaderBackground(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", scrollEvent);
+    return () => {
+      window.removeEventListener("scroll", scrollEvent);
+    };
+  }, []);
   return (
     <Container>
+      <Header headerBackground={headerBackground} />
       <Banner />
       <About />
       <Skills />
