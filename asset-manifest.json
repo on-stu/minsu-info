@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/minsu/static/css/main.4767db7a.css",
-    "main.js": "/minsu/static/js/main.64f06844.js",
-    "index.html": "/minsu/index.html",
-    "main.4767db7a.css.map": "/minsu/static/css/main.4767db7a.css.map",
-    "main.64f06844.js.map": "/minsu/static/js/main.64f06844.js.map"
+    "main.css": "/minsu-info/static/css/main.4767db7a.css",
+    "main.js": "/minsu-info/static/js/main.ec15bf1b.js",
+    "index.html": "/minsu-info/index.html",
+    "main.4767db7a.css.map": "/minsu-info/static/css/main.4767db7a.css.map",
+    "main.ec15bf1b.js.map": "/minsu-info/static/js/main.ec15bf1b.js.map"
   },
   "entrypoints": [
     "static/css/main.4767db7a.css",
-    "static/js/main.64f06844.js"
+    "static/js/main.ec15bf1b.js"
   ]
 }
