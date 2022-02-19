@@ -21,14 +21,31 @@ const Container = styled.div`
     color: whitesmoke;
     font-size: 50px;
   }
+  .icon {
+    cursor: pointer;
+  }
 `;
 const Footer = () => {
   return (
     <Container>
       <div className="icons">
-        <AiFillGithub className="icon" />
-        <AiOutlineInstagram className="icon" />
-        <AiOutlineFacebook className="icon" />
+        <AiFillGithub
+          className="icon"
+          onClick={() => (window.location.href = "https://github.com/on-stu")}
+        />
+        <AiOutlineInstagram
+          className="icon"
+          onClick={() =>
+            (window.location.href = "https://www.instagram.com/mminnsssuu/")
+          }
+        />
+        <AiOutlineFacebook
+          className="icon"
+          onClick={() =>
+            (window.location.href =
+              "https://www.facebook.com/profile.php?id=100027559523477")
+          }
+        />
       </div>
     </Container>
   );
