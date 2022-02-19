@@ -1,0 +1,37 @@
+import React from "react";
+import styled from "styled-components";
+import {
+  AiFillGithub,
+  AiOutlineInstagram,
+  AiOutlineFacebook,
+} from "react-icons/ai";
+const Container = styled.div`
+  height: 200px;
+  width: 100%;
+  margin-top: 100px;
+  background-color: #131314;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .icons {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    max-width: 300px;
+    color: whitesmoke;
+    font-size: 50px;
+  }
+`;
+const Footer = () => {
+  return (
+    <Container>
+      <div className="icons">
+        <AiFillGithub className="icon" />
+        <AiOutlineInstagram className="icon" />
+        <AiOutlineFacebook className="icon" />
+      </div>
+    </Container>
+  );
+};
+
+export default Footer;
