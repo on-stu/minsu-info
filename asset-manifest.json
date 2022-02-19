@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/minsu/static/css/main.4767db7a.css",
+    "main.js": "/minsu/static/js/main.64f06844.js",
+    "index.html": "/minsu/index.html",
+    "main.4767db7a.css.map": "/minsu/static/css/main.4767db7a.css.map",
+    "main.64f06844.js.map": "/minsu/static/js/main.64f06844.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4767db7a.css",
+    "static/js/main.64f06844.js"
+  ]
+}
