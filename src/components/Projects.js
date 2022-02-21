@@ -10,8 +10,10 @@ const Container = styled.div`
   .innerContainer {
     width: 95%;
     max-width: 1024px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
   }
   .title {
     font-size: 24px;

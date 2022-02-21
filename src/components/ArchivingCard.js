@@ -6,9 +6,33 @@ const Container = styled.div`
   padding: 20px;
   box-sizing: border-box;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  transition: all 200ms linear;
+  cursor: pointer;
+  .list {
+    width: 50%;
+    display: flex;
+  }
+  &:hover {
+    transform: scale(1.02);
+  }
+  .link {
+    color: #399dda;
+    text-decoration: underline;
+  }
 `;
-const ArchivingCard = () => {
-  return <Container>ArchivingCard</Container>;
+const ArchivingCard = ({ children, title, img, link }) => {
+  return (
+    <Container onClick={() => (window.location.href = link)}>
+      {img}
+      <span>{title}</span>
+      <span className="link">{link}</span>
+      <div className="list">{children}</div>
+    </Container>
+  );
 };
 
 export default ArchivingCard;

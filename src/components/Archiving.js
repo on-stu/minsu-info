@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import ArchivingCard from "./ArchivingCard";
 import Tags from "./Tags";
+import Tistory from "../assets/tistory-logo-fill.svg";
+import { BsGithub } from "react-icons/bs";
 
 const Container = styled.div`
   width: 100%;
@@ -15,6 +17,7 @@ const Container = styled.div`
     max-width: 1024px;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
   }
 
   .title {
@@ -33,6 +36,14 @@ const Container = styled.div`
     box-sizing: border-box;
     column-gap: 20px;
   }
+
+  @media screen and (max-width: 768px) {
+    .cards {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+    }
+  }
 `;
 
 const Archiving = () => {
@@ -41,8 +52,32 @@ const Archiving = () => {
       <div className="innerContainer" id="Archiving">
         <Tags tagName={"Archiving"}>
           <div className="cards">
-            <ArchivingCard />
-            <ArchivingCard />
+            <ArchivingCard
+              title={"Github"}
+              img={<BsGithub size="6em" />}
+              link="https://github.com/on-stu"
+            >
+              <ul>
+                <li>어쩌고</li>
+                <li>어쩌고</li>
+                <li>어쩌고</li>
+                <li>어쩌고</li>
+                <li>어쩌고</li>
+              </ul>
+            </ArchivingCard>
+            <ArchivingCard
+              title={"Tstory"}
+              img={<img src={Tistory} width="100px" />}
+              link="https://developer-ssu.tistory.com/"
+            >
+              <ul>
+                <li>어쩌고</li>
+                <li>어쩌고</li>
+                <li>어쩌고</li>
+                <li>어쩌고</li>
+                <li>어쩌고</li>
+              </ul>
+            </ArchivingCard>
           </div>
         </Tags>
       </div>

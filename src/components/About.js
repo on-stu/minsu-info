@@ -11,6 +11,7 @@ const Container = styled.div`
 
   .innerContainer {
     padding: 20px;
+    box-sizing: border-box;
     width: 95%;
     max-width: 1024px;
     display: flex;

@@ -14,6 +14,7 @@ const Container = styled.div`
     max-width: 1024px;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
   }
   .title {
     font-size: 24px;
