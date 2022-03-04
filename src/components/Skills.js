@@ -27,7 +27,7 @@ const Container = styled.div`
   .lower {
     padding: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
     row-gap: 20px;
   }
@@ -36,8 +36,7 @@ const Container = styled.div`
   }
   @media screen and (max-width: 768px) {
     .lower {
-      display: flex;
-      flex-direction: column;
+      grid-template-columns: 1fr 1fr;
     }
   }
 `;

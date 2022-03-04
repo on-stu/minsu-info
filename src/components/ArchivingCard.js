@@ -23,6 +23,20 @@ const Container = styled.div`
     color: #399dda;
     text-decoration: underline;
   }
+  @media screen and (max-width: 768px) {
+    .linkContainer {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+    .link {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .list {
+      width: 80%;
+    }
+  }
 `;
 const ArchivingCard = ({ children, title, img, link }) => {
   return (

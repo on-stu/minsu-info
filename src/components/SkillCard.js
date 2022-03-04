@@ -1,13 +1,18 @@
 import React from "react";
 import styled from "styled-components";
+import useWindowDimensions from "../hooks/UseWindowDimensions";
 const Container = styled.div`
   width: 100%;
   display: flex;
   column-gap: 20px;
   background-color: whitesmoke;
-  padding: 20px;
+  padding: 10px 20px;
   box-sizing: border-box;
   border-radius: 10px;
+  transition: all 200ms linear;
+  &:hover {
+    transform: scale(1.02);
+  }
   .img {
     width: 100px;
     height: 100px;
@@ -20,12 +25,14 @@ const Container = styled.div`
     display: flex;
     width: 100%;
     flex-direction: column;
+    justify-content: space-evenly;
     height: 100%;
     row-gap: 20px;
   }
   .rightTop {
     display: flex;
     justify-content: space-between;
+    white-space: nowrap;
   }
   .category {
     color: gray;
@@ -71,21 +78,33 @@ const Container = styled.div`
     .name {
       font-size: 16px;
     }
+    .imgContainer {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
   }
 `;
 const SkillCard = ({ image, title, percent, category }) => {
+  const { width, height } = useWindowDimensions();
   return (
     <Container image={image} percent={percent}>
-      <div className="img"></div>
+      {width > 768 && <div className="img"></div>}
       <div className="right">
         <div className="rightTop">
           <span className="name">{title}</span>
+        </div>
+        {width < 768 && (
+          <div className="imgContainer">
+            <div className="img"></div>
+          </div>
+        )}
+        {/* <div className="progress">
+          <div className="bar"></div>
+        </div> */}
+        <div className="exp">
           <span className="category">{category}</span>
         </div>
-        <div className="progress">
-          <div className="bar"></div>
-        </div>
-        <div className="exp">Exp : {percent} / 100</div>
       </div>
     </Container>
   );

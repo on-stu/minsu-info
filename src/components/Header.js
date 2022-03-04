@@ -11,7 +11,7 @@ const Container = styled.div`
   padding-bottom: 15px;
   color: white;
   z-index: 100;
-  ${(props) => props.headerBackground && "background-color: #060606;"}
+  ${(props) => props.headerBackground && "background-color: #131314;"}
   .innerContainer {
     width: 95%;
     max-width: 1024px;
