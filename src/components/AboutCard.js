@@ -9,6 +9,7 @@ import {
 import { BiMap } from "react-icons/bi";
 import { MdOutlineSchool } from "react-icons/md";
 import { HiOutlineMail } from "react-icons/hi";
+import useWindowDimensions from "../hooks/UseWindowDimensions";
 
 const Container = styled.div`
   color: #ddb974;
@@ -30,6 +31,7 @@ const Container = styled.div`
   }
 `;
 const AboutCard = ({ icon }) => {
+  const { width, height } = useWindowDimensions();
   return (
     <Container>
       {icon === "user" ? (
@@ -69,7 +71,11 @@ const AboutCard = ({ icon }) => {
           <HiOutlineMail className="icon" />
           <div className="right">
             <span className="name">이메일</span>
-            <span>minsu0523@naver.com</span>
+            <span>
+              minsu0523
+              {width < 768 && <br />}
+              @naver.com
+            </span>
           </div>
         </>
       ) : (
