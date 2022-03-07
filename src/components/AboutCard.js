@@ -8,6 +8,7 @@ import {
 } from "react-icons/ai";
 import { BiMap } from "react-icons/bi";
 import { MdOutlineSchool } from "react-icons/md";
+import { HiOutlineMail } from "react-icons/hi";
 
 const Container = styled.div`
   color: #ddb974;
@@ -65,7 +66,7 @@ const AboutCard = ({ icon }) => {
         </>
       ) : icon === "email" ? (
         <>
-          <AiOutlineMail className="icon" />
+          <HiOutlineMail className="icon" />
           <div className="right">
             <span className="name">이메일</span>
             <span>minsu0523@naver.com</span>
