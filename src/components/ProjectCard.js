@@ -42,7 +42,7 @@ const Container = styled.div`
     }
   }
 `;
-const ProjectCard = ({ title }) => {
+const ProjectCard = ({ title, imgArray }) => {
   const { width, height } = useWindowDimensions();
   return (
     <Container>
@@ -53,7 +53,7 @@ const ProjectCard = ({ title }) => {
         </span>
       </div>
       <div className="contents">
-        <Carousel />
+        <Carousel imgArray={imgArray} />
         <div className="details">
           처음으로 해본 프로젝트로 사범대이며 교육에 간심 개 조지 처음으로 해본
           프로젝트로 사범대이며 교육에 간심 개 조지 처음으로 해본 프로젝트로

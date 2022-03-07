@@ -34,6 +34,22 @@ const Container = styled.div`
 `;
 
 const Projects = () => {
+  const imgArray = [
+    "/images/hyeyum/1.png",
+    "/images/hyeyum/2.png",
+    "/images/hyeyum/3.png",
+  ];
+  const hyeyumArray = [
+    "/images/hyeyum/1.png",
+    "/images/hyeyum/2.png",
+    "/images/hyeyum/3.png",
+    "/images/hyeyum/4.png",
+    "/images/hyeyum/5.png",
+    "/images/hyeyum/6.png",
+    "/images/hyeyum/7.png",
+    "/images/hyeyum/8.png",
+    "/images/hyeyum/9.png",
+  ];
   return (
     <Container>
       <div className="innerContainer" id="Projects">
@@ -43,12 +59,12 @@ const Projects = () => {
           <span className="tag">{" >"}</span>
         </span>
         <div className="cards">
-          <ProjectCard title="과외 혜윰" />
-          <ProjectCard title="랜선주점" />
-          <ProjectCard title="MyShy" />
-          <ProjectCard title="EMMA" />
-          <ProjectCard title="SIFFER" />
-          <ProjectCard title="포트폴리오 페이지" />
+          <ProjectCard title="과외 혜윰" imgArray={hyeyumArray} />
+          <ProjectCard title="랜선주점" imgArray={imgArray} />
+          <ProjectCard title="MyShy" imgArray={imgArray} />
+          <ProjectCard title="EMMA" imgArray={imgArray} />
+          <ProjectCard title="SIFFER" imgArray={imgArray} />
+          <ProjectCard title="포트폴리오 페이지" imgArray={imgArray} />
         </div>
         <span>
           <span className="tag">{"</ "}</span>
