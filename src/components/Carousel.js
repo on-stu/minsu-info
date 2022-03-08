@@ -61,11 +61,11 @@ const Container = styled.div`
       cursor: none;
     }
     .innerContainer {
-      width: ${(props) => `${props.imgLength * 225}px`};
       width: 225px !important;
       height: 150px;
     }
     .imgContainer {
+      width: ${(props) => `${props.imgLength * 225}px`};
       height: 150px;
     }
   }

@@ -14,6 +14,12 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #1e1e1e;
+  .anchor {
+    display: block;
+    position: relative;
+    top: -80px;
+    visibility: hidden;
+  }
 `;
 
 function App() {
@@ -33,15 +39,22 @@ function App() {
       window.removeEventListener("scroll", scrollEvent);
     };
   }, []);
+
   return (
     <Container>
       <Header headerBackground={headerBackground} />
       <Banner />
+      <a className="anchor" id="About"></a>
       <About />
+      <a className="anchor" id="Skills"></a>
       <Skills />
+      <a className="anchor" id="Archiving"></a>
       <Archiving />
+      <a className="anchor" id="Projects"></a>
       <Projects />
+      <a className="anchor" id="Careers"></a>
       <Careers />
+
       <Footer />
     </Container>
   );

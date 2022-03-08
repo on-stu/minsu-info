@@ -52,7 +52,7 @@ const Projects = () => {
   ];
   return (
     <Container>
-      <div className="innerContainer" id="Projects">
+      <div className="innerContainer">
         <span>
           <span className="tag">{"< "}</span>
           <span className="title">Projects</span>

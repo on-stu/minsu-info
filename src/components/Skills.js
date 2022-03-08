@@ -44,7 +44,7 @@ const Container = styled.div`
 const Skills = () => {
   return (
     <Container>
-      <div className="innerContainer" id="Skills">
+      <div className="innerContainer">
         <span>
           <span className="tag">{"< "}</span>
           <span className="title">Skills</span>

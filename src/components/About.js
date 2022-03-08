@@ -44,7 +44,7 @@ const Container = styled.div`
 const About = () => {
   return (
     <Container>
-      <div className="innerContainer" id="About">
+      <div className="innerContainer">
         <span>
           <span className="tag">{"< "}</span>
           <span className="title">About</span>

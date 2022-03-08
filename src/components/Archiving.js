@@ -49,7 +49,7 @@ const Container = styled.div`
 const Archiving = () => {
   return (
     <Container>
-      <div className="innerContainer" id="Archiving">
+      <div className="innerContainer">
         <Tags tagName={"Archiving"}>
           <div className="cards">
             <ArchivingCard

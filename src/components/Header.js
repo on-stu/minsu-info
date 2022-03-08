@@ -2,8 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import useWindowDimensions from "../hooks/UseWindowDimensions";
 import { AiOutlineMenu } from "react-icons/ai";
+import { Link } from "react-scroll";
+
 const Container = styled.div`
   width: 100%;
+  height: 72px;
   display: flex;
   justify-content: center;
   position: fixed;
@@ -50,19 +53,29 @@ const Header = ({ headerBackground }) => {
         {width > 768 ? (
           <span className="menus">
             <span>
-              <a href="#About">About</a>
+              <Link to="About" spy={true} smooth={true}>
+                About
+              </Link>
             </span>
             <span>
-              <a href="#Skills">Skills</a>
+              <Link spy={true} smooth={true} to="Skills">
+                Skills
+              </Link>
             </span>
             <span>
-              <a href="#Archiving">Archiving</a>
+              <Link spy={true} smooth={true} to="Archiving">
+                Archiving
+              </Link>
             </span>
             <span>
-              <a href="#Projects">Projects</a>
+              <Link spy={true} smooth={true} to="Projects">
+                Projects
+              </Link>
             </span>
             <span>
-              <a href="#Careers">Careers</a>
+              <Link spy={true} smooth={true} to="Careers">
+                Careers
+              </Link>
             </span>
           </span>
         ) : (
