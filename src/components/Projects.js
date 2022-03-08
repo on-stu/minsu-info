@@ -50,6 +50,33 @@ const Projects = () => {
     "/images/hyeyum/8.png",
     "/images/hyeyum/9.png",
   ];
+  const landrinkArray = [
+    "/images/landrink/1.png",
+    "/images/landrink/2.png",
+    "/images/landrink/3.png",
+    "/images/landrink/4.png",
+  ];
+  const myshyArray = [
+    "/images/myshy/1.png",
+    "/images/myshy/2.png",
+    "/images/myshy/3.png",
+    "/images/myshy/4.png",
+  ];
+  const emmaArray = [
+    "/images/EMMA/1.png",
+    "/images/EMMA/2.png",
+    "/images/EMMA/3.png",
+    "/images/EMMA/4.png",
+    "/images/EMMA/5.png",
+    "/images/EMMA/6.png",
+    "/images/EMMA/7.png",
+    "/images/EMMA/8.png",
+    "/images/EMMA/9.png",
+    "/images/EMMA/10.png",
+    "/images/EMMA/11.png",
+    "/images/EMMA/12.png",
+    "/images/EMMA/13.png",
+  ];
   return (
     <Container>
       <div className="innerContainer">
@@ -60,9 +87,9 @@ const Projects = () => {
         </span>
         <div className="cards">
           <ProjectCard title="과외 혜윰" imgArray={hyeyumArray} />
-          <ProjectCard title="랜선주점" imgArray={imgArray} />
-          <ProjectCard title="MyShy" imgArray={imgArray} />
-          <ProjectCard title="EMMA" imgArray={imgArray} />
+          <ProjectCard title="랜선주점" imgArray={landrinkArray} />
+          <ProjectCard title="MyShy" imgArray={myshyArray} />
+          <ProjectCard title="EMMA" imgArray={emmaArray} />
           <ProjectCard title="SIFFER" imgArray={imgArray} />
           <ProjectCard title="포트폴리오 페이지" imgArray={imgArray} />
         </div>
