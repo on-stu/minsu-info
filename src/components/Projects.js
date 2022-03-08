@@ -40,8 +40,8 @@ const Projects = () => {
     "/images/hyeyum/3.png",
   ];
   const hyeyumArray = [
-    "/images/hyeyum/1.png",
     "/images/hyeyum/2.png",
+    "/images/hyeyum/1.png",
     "/images/hyeyum/3.png",
     "/images/hyeyum/4.png",
     "/images/hyeyum/5.png",
@@ -77,6 +77,13 @@ const Projects = () => {
     "/images/EMMA/12.png",
     "/images/EMMA/13.png",
   ];
+  const sifferArray = [
+    "/images/siffer/1.png",
+    "/images/siffer/2.png",
+    "/images/siffer/3.png",
+    "/images/siffer/4.png",
+    "/images/siffer/5.png",
+  ];
   return (
     <Container>
       <div className="innerContainer">
@@ -90,7 +97,7 @@ const Projects = () => {
           <ProjectCard title="랜선주점" imgArray={landrinkArray} />
           <ProjectCard title="MyShy" imgArray={myshyArray} />
           <ProjectCard title="EMMA" imgArray={emmaArray} />
-          <ProjectCard title="SIFFER" imgArray={imgArray} />
+          <ProjectCard title="SIFFER" imgArray={sifferArray} />
           <ProjectCard title="포트폴리오 페이지" imgArray={imgArray} />
         </div>
         <span>
