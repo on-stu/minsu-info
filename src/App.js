@@ -7,6 +7,7 @@ import Careers from "./components/Careers";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Projects from "./components/Projects";
+import SideBar from "./components/SideBar";
 import Skills from "./components/Skills";
 
 const Container = styled.div`
@@ -24,7 +25,7 @@ const Container = styled.div`
 
 function App() {
   const [headerBackground, setHeaderBackground] = useState(false);
-
+  const [sideBar, setSideBar] = useState(false);
   const scrollEvent = () => {
     if (window.scrollY > 100) {
       setHeaderBackground(true);
@@ -42,7 +43,12 @@ function App() {
 
   return (
     <Container>
-      <Header headerBackground={headerBackground} />
+      <Header
+        headerBackground={headerBackground}
+        setSideBar={setSideBar}
+        sideBar={sideBar}
+      />
+      <SideBar visible={sideBar} setVisible={setSideBar} />
       <Banner />
       <a className="anchor" id="About"></a>
       <About />

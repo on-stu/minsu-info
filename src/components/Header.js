@@ -44,7 +44,7 @@ const Container = styled.div`
   }
 `;
 
-const Header = ({ headerBackground }) => {
+const Header = ({ headerBackground, setSideBar, sideBar }) => {
   const { width, height } = useWindowDimensions();
   return (
     <Container headerBackground={headerBackground}>
@@ -80,7 +80,7 @@ const Header = ({ headerBackground }) => {
           </span>
         ) : (
           <span className="menu">
-            <AiOutlineMenu />
+            <AiOutlineMenu onClick={() => setSideBar(!sideBar)} />
           </span>
         )}
       </div>
