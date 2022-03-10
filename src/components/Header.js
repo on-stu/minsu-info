@@ -27,6 +27,7 @@ const Container = styled.div`
   }
   .title {
     font-size: 24px;
+    cursor: pointer;
   }
   .menus {
     display: flex;
@@ -49,7 +50,9 @@ const Header = ({ headerBackground, setSideBar, sideBar }) => {
   return (
     <Container headerBackground={headerBackground}>
       <div className="innerContainer">
-        <span className="title">KMS's Portfolio</span>
+        <Link to="top" spy={true} smooth={true}>
+          <span className="title">KMS's Portfolio</span>
+        </Link>
         {width > 768 ? (
           <span className="menus">
             <span>

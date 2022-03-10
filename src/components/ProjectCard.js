@@ -31,6 +31,11 @@ const Container = styled.div`
     box-sizing: border-box;
     column-gap: 20px;
   }
+  .details {
+    font-family: "MinSans-Light";
+    font-weight: 300;
+    white-space: pre-line;
+  }
 
   @media screen and (max-width: 768px) {
     .contents {
@@ -42,7 +47,7 @@ const Container = styled.div`
     }
   }
 `;
-const ProjectCard = ({ title, imgArray }) => {
+const ProjectCard = ({ title, imgArray, arrow, detail }) => {
   const { width, height } = useWindowDimensions();
   return (
     <Container>
@@ -53,15 +58,20 @@ const ProjectCard = ({ title, imgArray }) => {
         </span>
       </div>
       <div className="contents">
-        <Carousel imgArray={imgArray} />
+        <Carousel
+          imgArray={imgArray}
+          white={arrow === "white" ? true : false}
+        />
         <div className="details">
-          처음으로 해본 프로젝트로 사범대이며 교육에 간심 개 조지 처음으로 해본
+          {detail
+            ? detail
+            : `처음으로 해본 프로젝트로 사범대이며 교육에 간심 개 조지 처음으로 해본
           프로젝트로 사범대이며 교육에 간심 개 조지 처음으로 해본 프로젝트로
           사범대이며 교육에 간심 개 조지 처음으로 해본 프로젝트로 사범대이며
           교육에 간심 개 조지 처음으로 해본 프로젝트로 사범대이며 교육에 간심 개
           조지 처음으로 해본 프로젝트로 사범대이며 교육에 간심 개 조지 처음으로
           해본 프로젝트로 사범대이며 교육에 간심 개 조지 처음으로 해본
-          프로젝트로 사범대이며 교육에 간심 개 조지 ㅍ
+          프로젝트로 사범대이며 교육에 간심 개 조지 ㅍ`}
         </div>
       </div>
     </Container>

@@ -86,7 +86,7 @@ const Img = styled.div`
   }
 `;
 
-const Carousel = ({ imgArray }) => {
+const Carousel = ({ imgArray, white }) => {
   const [current, setCurrent] = useState(0);
   return (
     <Container current={current} imgLength={imgArray.length}>
@@ -100,7 +100,7 @@ const Carousel = ({ imgArray }) => {
           }
         }}
       >
-        <AiOutlineLeft />
+        <AiOutlineLeft color={white ? "white" : "black"} />
       </span>
       <div className="innerContainer">
         <div className="imgContainer">
@@ -119,7 +119,7 @@ const Carousel = ({ imgArray }) => {
           }
         }}
       >
-        <AiOutlineRight />
+        <AiOutlineRight color={white ? "white" : "black"} />
       </span>
     </Container>
   );
