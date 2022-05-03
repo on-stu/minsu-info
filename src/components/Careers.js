@@ -85,7 +85,10 @@ const Careers = () => {
             date="2021.12 ~ 현재"
             content="사이즈 맞춤 서비스 스타트업 'SIFFER' 개발자로 참여"
           />
-          <EachCarrer date="2022.04 ~ 2022.06" content="노마드 장학생 선발" />
+          <EachCarrer
+            date="2022.04 ~ 2022.06"
+            content="노마드 장학생 선발로 노마드 코더 컨텐츠 번역 작업 참여"
+          />
         </div>
         <span>
           <span className="tag">{"</ "}</span>
