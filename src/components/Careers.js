@@ -54,6 +54,15 @@ const Container = styled.div`
   }
 `;
 
+const EachCarrer = ({ date, content }) => {
+  return (
+    <div className="list">
+      <span className="date">{date}</span>
+      <span className="content">{content}</span>
+    </div>
+  );
+};
+
 const Careers = () => {
   return (
     <Container>
@@ -64,22 +73,19 @@ const Careers = () => {
           <span className="tag">{" >"}</span>
         </span>
         <div className="listContainer">
-          <div className="list">
-            <span className="date">2021.09 ~ 현재</span>
-            <span className="content">부산대학교 정보컴퓨터공학부 부전공</span>
-          </div>
-          <div className="list">
-            <span className="date">2021.11 ~ 2022.01</span>
-            <span className="content">
-              부산대학교 어플 동아리 'Apptive' 2팀 프로젝트 EMMA 참여
-            </span>
-          </div>
-          <div className="list">
-            <span className="date">2021.12 ~ 현재</span>
-            <span className="content">
-              사이즈 맞춤 서비스 스타트업 'SIFFER' 개발자로 참여
-            </span>
-          </div>
+          <EachCarrer
+            date="2021.09 ~ 현재"
+            content="부산대학교 정보컴퓨터공학부 부전공"
+          />
+          <EachCarrer
+            date="2021.11 ~ 2022.01"
+            content="부산대학교 어플 동아리 'Apptive' 2팀 프로젝트 EMMA 참여"
+          />
+          <EachCarrer
+            date="2021.12 ~ 현재"
+            content="사이즈 맞춤 서비스 스타트업 'SIFFER' 개발자로 참여"
+          />
+          <EachCarrer date="2022.04 ~ 2022.06" content="노마드 장학생 선발" />
         </div>
         <span>
           <span className="tag">{"</ "}</span>
