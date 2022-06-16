@@ -58,6 +58,12 @@ const Skills = () => {
             category="Frontend"
           />
           <SkillCard
+            image={"/images/nextjs.png"}
+            title="Next"
+            percent={90}
+            category="Frontend / SSR"
+          />
+          <SkillCard
             image={"/images/javascript.png"}
             title="Javascript"
             percent={100}
