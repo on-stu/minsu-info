@@ -72,9 +72,9 @@ const AboutCard = ({ icon }) => {
           <div className="right">
             <span className="name">이메일</span>
             <span>
-              minsu0523
+              minsu-kim
               {width < 768 && <br />}
-              @naver.com
+              @siffer.co.kr
             </span>
           </div>
         </>
