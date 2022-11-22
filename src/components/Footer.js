@@ -48,9 +48,6 @@ const Footer = () => {
           }
         />
       </div>
-      <a href="https://pusan.zoom.us/j/92148569948?pwd=cHdQekw2Ui81Q0F6eXBVenVSODk4dz09">
-        민우야 이거 눌러봐
-      </a>
     </Container>
   );
 };
