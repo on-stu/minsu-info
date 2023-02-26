@@ -35,6 +35,17 @@ const Container = styled.div`
     font-family: "MinSans-Light";
     font-weight: 300;
     white-space: pre-line;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  a {
+    color: #3483b2;
+    margin-right: 8px;
+  }
+  .emphasis {
+    color: #e44c27;
+    font-weight: 700;
   }
 
   @media screen and (max-width: 768px) {
@@ -47,7 +58,7 @@ const Container = styled.div`
     }
   }
 `;
-const ProjectCard = ({ title, imgArray, arrow, detail }) => {
+const ProjectCard = ({ title, imgArray, arrow, detail, links }) => {
   const { width, height } = useWindowDimensions();
   return (
     <Container>
@@ -72,6 +83,25 @@ const ProjectCard = ({ title, imgArray, arrow, detail }) => {
           조지 처음으로 해본 프로젝트로 사범대이며 교육에 간심 개 조지 처음으로
           해본 프로젝트로 사범대이며 교육에 간심 개 조지 처음으로 해본
           프로젝트로 사범대이며 교육에 간심 개 조지 ㅍ`}
+          {links && links.length > 0 && (
+            <>
+              <span className="emphasis">링크 : </span>
+            </>
+          )}
+          {links &&
+            links.length > 0 &&
+            links.map((link, index) => {
+              return (
+                <a
+                  key={index}
+                  href={link.link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {link.title}
+                </a>
+              );
+            })}
         </div>
       </div>
     </Container>

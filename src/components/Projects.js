@@ -87,6 +87,11 @@ const Projects = () => {
     "/images/campusdate/4.png",
     "/images/campusdate/5.png",
   ];
+  const jjockgoArray = [
+    "/images/jjockgo/1.png",
+    "/images/jjockgo/3.png",
+    "/images/jjockgo/2.png",
+  ];
   return (
     <Container>
       <div className="innerContainer">
@@ -132,6 +137,21 @@ const Projects = () => {
             title="캠퍼스 데이트"
             imgArray={campusdateArray}
             detail={`캠퍼스 데이트는 같은 대학 내 사람들과 소개팅을 할 수 있게 해주는 데이팅 앱입니다. React Native, Django, socket.io를 사용하여, 취미, 이상형, 성향을 비롯한 자동 매칭 알고리즘, 실시간 채팅 기능, 기타 게시판 기능들을 만들었습니다. 실제 사용되는 서비스 구현을 목적으로 했기 때문에 지금까지 만들던 프로젝트들 중 가장 많은 기능과 내용을 담고 있었고, 그렇기 때문에 앱이 제대로 시행되기 위해서는 기존에 만들었던 프로젝트들 보다 훨씬 더 높은 이해가 필요했고, 코드가 제대로 작성될 필요가 있었습니다. 그러한 과정속에서 React의 useState, useEffect, useMemo, useContext 등의 hook을 통한 lifecycle 관리의 제대로 된 이해를 할 수 있었고, 나아가, fcm, expo push-notification을 통해 푸쉬 알림 기능 구현에 성공했습니다.`}
+          />
+          <ProjectCard
+            title="쪽고의 모험"
+            imgArray={jjockgoArray}
+            detail={`쪽고의 모험이라는 게임은 Flutter와 Flame으로 만들어진 게임으로, Flappy Bird와 유사한 형식입니다. 게임은 부산대학교 쪽문 앞에 사는 고양이인 쪽고를 캐릭터로 사용하여 제작되었습니다. 쪽고의 모험은 누구나 쉽게 접근할 수 있는 형태로 제작되어, Android용으로는 플레이스토어에서 다운로드하여 즐길 수 있고, iOS용으로는 PWA 형식으로 웹에서 플레이할 수 있습니다. (앱스토어에서는 거부당했습니다.)`}
+            links={[
+              {
+                link: "https://play.google.com/store/apps/details?id=info.minsu.jjockgo",
+                title: "Play Store",
+              },
+              {
+                link: "https://jjockgo.minsu.info/",
+                title: "Web (PWA)",
+              },
+            ]}
           />
         </div>
         <span>

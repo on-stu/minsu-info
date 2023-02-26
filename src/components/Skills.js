@@ -111,7 +111,6 @@ const Skills = () => {
             percent={50}
             category="Backend"
           />
-
           <SkillCard
             image={"/images/firebase.png"}
             title="Firebase"
@@ -130,7 +129,6 @@ const Skills = () => {
             percent={55}
             category="Deployment"
           />
-
           <SkillCard
             image={"/images/netlify.png"}
             title="Netlify"

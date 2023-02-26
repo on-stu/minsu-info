@@ -82,12 +82,16 @@ const Careers = () => {
             content="부산대학교 어플 동아리 'Apptive' 2팀 프로젝트 EMMA 참여"
           />
           <EachCarrer
-            date="2021.12 ~ 현재"
+            date="2021.12 ~ 2022.12"
             content="사이즈 맞춤 서비스 스타트업 'SIFFER' 개발자로 참여"
           />
           <EachCarrer
             date="2022.04 ~ 2022.06"
             content="노마드 장학생 선발로 노마드 코더 컨텐츠 번역 작업 참여"
+          />
+          <EachCarrer
+            date="2023.01 ~ 현재"
+            content="데브게이트 CoFounder로 참여"
           />
         </div>
         <span>
